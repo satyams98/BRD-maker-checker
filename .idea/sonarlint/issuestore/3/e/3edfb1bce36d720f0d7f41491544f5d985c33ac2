@@ -1,0 +1,86 @@
+
+fjavascript:S905"FExpected an assignment or function call and instead saw an expression.(’¬Ëøùÿÿÿÿ
+ajavascript:S1121"@Extract the assignment of "module.exports" from this expression.(’¬Ëøùÿÿÿÿ
+_javascript:S3358"DExtract this nested ternary operation into an independent statement.(ÕÍÏd
+`javascript:S3358	"DExtract this nested ternary operation into an independent statement.(†„´Õ
+rjavascript:S3776
+"VRefactor this function to reduce its Cognitive Complexity from 1807 to the 15 allowed.(é«Í¼
+Bjavascript:S1186Â" Unexpected empty arrow function.(î÷òÏúÿÿÿÿ
+bjavascript:S905Ï"FExpected an assignment or function call and instead saw an expression.(ŒˆÓÅ
+Tjavascript:S1117å"2'callback' is already declared in the upper scope.(­“š³úÿÿÿÿ
+Hjavascript:S1117¹",'fn' is already declared in the upper scope.(•©¹
+Ljavascript:S1117Ø	"/'order' is already declared in the upper scope.(ÒåÀé
+Qjavascript:S1117Œ
+"/'start' is already declared in the upper scope.(½ú†×ıÿÿÿÿ
+Ojavascript:S1117™
+"-'end' is already declared in the upper scope.(„ĞÂËûÿÿÿÿ
+Qjavascript:S1117®
+"/'event' is already declared in the upper scope.(½²üßüÿÿÿÿ
+Qjavascript:S1117Õ
+"/'order' is already declared in the upper scope.(ûó¾”şÿÿÿÿ
+njavascript:S4138î
+"LExpected a `for-of` loop instead of a `for` loop with this simple iteration.(³àª¡øÿÿÿÿ
+Qjavascript:S1117Š"/'order' is already declared in the upper scope.(Š„“ıÿÿÿÿ
+Qjavascript:S1117é"/'order' is already declared in the upper scope.(¬­€Ñÿÿÿÿÿ
+Pjavascript:S1117ß".'name' is already declared in the upper scope.(Ššõ×øÿÿÿÿ
+Ljavascript:S1117†"/'style' is already declared in the upper scope.(ËÇÁû
+@javascript:S125¥"Remove this commented out code.(Œğïèÿÿÿÿÿ
+‘javascript:S1172§"oRemove the unused function parameter "includeScale" or rename it to "_includeScale" to make intention explicit.(Ç›íÒúÿÿÿÿ
+fjavascript:S1134«"DTake the required action to fix the issue indicated by this comment.(ğôÇŸùÿÿÿÿ
+Tjavascript:S1117€"7'popperOffsets' is already declared in the upper scope.(¼¢Äï
+`javascript:S3358‘"DExtract this nested ternary operation into an independent statement.( æÂ
+Ojavascript:S1117•"-'min' is already declared in the upper scope.(İËÒ™ıÿÿÿÿ
+Jjavascript:S1117–"-'max' is already declared in the upper scope.(¼ì«°
+Ljavascript:S1117˜"0'offset' is already declared in the upper scope.(›Š‹C
+Ljavascript:S1117ß"0'popper' is already declared in the upper scope.(Úì¿n
+fjavascript:S3358é"DExtract this nested ternary operation into an independent statement.(ªûŠÿÿÿÿÿ
+Gjavascript:S1656„"%'offsetParent' is assigned to itself.(±Ç²şÿÿÿÿ
+9javascript:S1186ÿ"Unexpected empty method 'fn'.( ÙÔ
+fjavascript:S3358–"DExtract this nested ternary operation into an independent statement.(ÛÖ†øÿÿÿÿ
+ajavascript:S3358³"DExtract this nested ternary operation into an independent statement.(ä¸Ø
+[javascript:S1117º"9'clippingParents' is already declared in the upper scope.(Ü¡€…ÿÿÿÿÿ
+[javascript:S1117Ì"9'clippingParents' is already declared in the upper scope.(·ŒÇúÿÿÿÿ
+Ujavascript:S1117Ş"3'reference' is already declared in the upper scope.(«’©„ÿÿÿÿÿ
+Yjavascript:S1117¶"7'popperOffsets' is already declared in the upper scope.(é’ÙÈùÿÿÿÿ
+Mjavascript:S1117É"0'offset' is already declared in the upper scope.(‡“Ã…
+fjavascript:S3358â"DExtract this nested ternary operation into an independent statement.(Üøû¬øÿÿÿÿ
+Ujavascript:S1117â"3'placement' is already declared in the upper scope.(Üøû¬øÿÿÿÿ
+Ujavascript:S1117å"3'placement' is already declared in the upper scope.(ÆÚ¤ÿÿÿÿÿ
+Pjavascript:S1117î"3'placement' is already declared in the upper scope.(Ç®†”
+Qjavascript:S1117"4'placements' is already declared in the upper scope.(¡ÄÑÕ
+Pjavascript:S1117"3'placement' is already declared in the upper scope.(¡ÄÑÕ
+njavascript:S4138®"LExpected a `for-of` loop instead of a `for` loop with this simple iteration.(º´‹”ıÿÿÿÿ
+fjavascript:S3358½"DExtract this nested ternary operation into an independent statement.(ğûşÿÿÿÿ
+fjavascript:S3358½"DExtract this nested ternary operation into an independent statement.(ğûşÿÿÿÿ
+Ljavascript:S1117İ"/'_loop' is already declared in the upper scope.(¬ò‘Ñ
+Ijavascript:S1117İ",'_i' is already declared in the upper scope.(¬ò‘Ñ
+Ujavascript:S1117Ş"3'placement' is already declared in the upper scope.(Ó¿£³øÿÿÿÿ
+Rjavascript:S1117ß"0'checks' is already declared in the upper scope.(“‚è¬øÿÿÿÿ
+Ljavascript:S1117Ã"0'offset' is already declared in the upper scope.(ÌêÇ
+Rjavascript:S1117İ"0'offset' is already declared in the upper scope.(ˆ‹ ıÿÿÿÿ
+Tjavascript:S1117®"7'popperOffsets' is already declared in the upper scope.(¼¢Äï
+Ljavascript:S1117Á"0'offset' is already declared in the upper scope.(ğò.
+fjavascript:S3358Ú"DExtract this nested ternary operation into an independent statement.(ßŞºÆùÿÿÿÿ
+Rjavascript:S1117€"0'merged' is already declared in the upper scope.(˜¡¥ùûÿÿÿÿ
+|javascript:S2392•"ZConsider moving declaration of 'args' as it is referenced outside current binding context.(ë‚¹öúÿÿÿÿ
+\javascript:S1117¥":'defaultModifiers' is already declared in the upper scope.(¤¿½¨øÿÿÿÿ
+Xjavascript:S1117¨"6'createPopper' is already declared in the upper scope.(ûŞìùÿÿÿÿ
+Ujavascript:S1117¨"3'reference' is already declared in the upper scope.(ûŞìùÿÿÿÿ
+Rjavascript:S1117¨"0'popper' is already declared in the upper scope.(ûŞìùÿÿÿÿ
+Sjavascript:S1117¾"1'options' is already declared in the upper scope.(ìõ³§ÿÿÿÿÿ
+fjavascript:S3358Â"DExtract this nested ternary operation into an independent statement.(§Ñàúÿÿÿÿ
+Pjavascript:S1117Û"3'reference' is already declared in the upper scope.(²ê€
+Mjavascript:S1117Ü"0'popper' is already declared in the upper scope.(ÊÎÈ²
+qjavascript:S1121õ"TExtract the assignment of "state.modifiersData[modifier.name]" from this expression.(ì£ï»
+?javascript:S2310ü""Remove this assignment of "index".(ìŞ™¬
+Ljavascript:S1117£"/'state' is already declared in the upper scope.(™ÎĞ¼
+Sjavascript:S1117±"1'options' is already declared in the upper scope.(È„²ÿÿÿÿÿ
+Mjavascript:S1117²"0'effect' is already declared in the upper scope.(ëÀÒ
+Rjavascript:S1117¼"0'noopFn' is already declared in the upper scope.(Úúƒıÿÿÿÿ
+Ejavascript:S1186¼"#Unexpected empty function 'noopFn'.(Úúƒıÿÿÿÿ
+Mjavascript:S1117"0'offset' is already declared in the upper scope.(Ş•™
+vjavascript:S4144ı'"YUpdate this function so that its implementation is not identical to the one on line 4683.(’ı¼¸
+{javascript:S4144¯("YUpdate this function so that its implementation is not identical to the one on line 4911.(Ôˆ¤ÿÿÿÿÿ
+vjavascript:S4144Ø,"YUpdate this function so that its implementation is not identical to the one on line 3980.(¶ÿğÊ
+Mjavascript:S1117Ú,"0'offset' is already declared in the upper scope.(Ş•™
+}javascript:S1488Š5"aImmediately return this expression instead of assigning it to the temporary variable "index_umd".(Ó–ßG
