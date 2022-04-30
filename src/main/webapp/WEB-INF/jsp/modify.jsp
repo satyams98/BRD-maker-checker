@@ -31,7 +31,7 @@
           </div>
           <div class="col">
             <div class="form-outline">
-              
+
               <label class="form-label" for="address1">Address 1</label>
               <form:input path="add1" type="text" id="address1" class="form-control" placeholder="Address1"/>
             </div>
@@ -39,40 +39,40 @@
         </div>
         <div class="col">
             <div class="form-outline">
-              
+
               <label class="form-label" for="address2">Address 2</label>
               <form:input path = "add2" type="text" id="address2" class="form-control" placeholder="Address2"/>
            </div>
           </div>
-      
+
         <div class="col">
             <div class="form-outline">
-              
+
               <label class="form-label" for="pinCode">Pin Code</label>
               <form:input path="pinCode" type="text" id="pinCode" class="form-control" placeholder="Pin Code" value=""/>
             </div>
           </div>
-  
-      
+
+
         <!-- Email input -->
         <div class="form-outline mb-4">
-         
+
           <label class="form-label" for="email">Email address</label>
           <form:input path="emailAdd" type="email" id="email" class="form-control" placeholder="name@example.com" />
         </div>
         <div class="form-outline mb-4">
-           
+
             <label class="form-label" for="contact">Contact</label>
             <form:input path="contactNo" type="text" id="contact" class="form-control" placeholder="Contact"/>
           </div>
           <div class="form-outline mb-4">
-           
+
             <label class="form-label" for="primaryContactPerson">Primary Contact Person</label>
             <form:input path="primaryContactPerson" type="text" id="primaryContactPerson" class="form-control" />
           </div>
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
-      
+        <button type="submit" class="btn btn-primary btn-block mb-4">Update</button>
+
       </form:form>
   </div>
 </body>

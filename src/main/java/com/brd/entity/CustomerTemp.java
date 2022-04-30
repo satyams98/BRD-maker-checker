@@ -9,11 +9,12 @@ import java.util.Map;
 
 @Entity
 public class CustomerTemp {
+    static int id = 101;
     @Id
     @Column(name = "customerCode", nullable = false, length = 10)
-    private String customerCode;
+    private String customerCode= getCustomerCode();
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long customerId;
 
     private String customerName;
@@ -184,5 +185,8 @@ public class CustomerTemp {
 
     public void setAuthorizes(Map.Entry<LocalDateTime, String> authorizes) {
         this.authorizes.put(authorizes.getKey(), authorizes.getValue());
+    }
+    private String generateCustomerCode(){
+        return "cust"+String.valueOf(++id);
     }
 }

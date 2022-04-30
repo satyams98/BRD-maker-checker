@@ -2,6 +2,7 @@ package com.brd.service;
 
 import com.brd.dao.DAO;
 import com.brd.dao.DAOImplementation;
+import com.brd.entity.ActiveInactiveFlag;
 import com.brd.entity.CustomerPerm;
 import com.brd.entity.CustomerTemp;
 import com.brd.entity.RecordStatus;
@@ -22,6 +23,7 @@ public class CheckerActions {
 
 
     public boolean authorize(String checker, CustomerTemp customerTemp){
+        customerTemp.setActiveInactiveFlag(ActiveInactiveFlag.A);
         if(customerTemp.getRecordStatus().equals(RecordStatus.N)) {
             checkerDAO.deleteTempRecord(customerTemp);
             CustomerPerm customerPerm = (CustomerPerm) customerTemp;

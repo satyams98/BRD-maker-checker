@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class CheckerEntity {
+public class Maker {
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
@@ -14,20 +14,20 @@ public class CheckerEntity {
     @Column(nullable = false)
     private String pass;
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
     public String getUserName() {
         return userName;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPass() {
         return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
     }
 
     public Long getId() {
@@ -37,4 +37,5 @@ public class CheckerEntity {
     public void setId(Long id) {
         this.id = id;
     }
+
 }

@@ -10,15 +10,8 @@
     
 </head>
 <body>
-<sql:setDataSource var="db" driver="oracle.jdbc.OracleDriver"  
-     url="jdbc:oracle:thin:@//localhost:1521/XE"  
-     user="c##_brd"  password="password"/>  
 
-<script>
-$(document).ready( function () {
-    $('#myTable').DataTable();
-} );
-</script>
+
 
 
 </body>

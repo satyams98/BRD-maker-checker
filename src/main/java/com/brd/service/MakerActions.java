@@ -18,8 +18,8 @@ public class MakerActions {
     @Qualifier("makerDAO")
     private DAO makerDAO;
 
-    public boolean createNewRecord(CustomerTemp customerTemp){
-        customerTemp.setCustomerCode("s101");
+    public boolean createNewRecord(String maker, CustomerTemp customerTemp){
+        customerTemp.setCreatedBy(maker);
         customerTemp.setRecordStatus(RecordStatus.N);
         customerTemp.setCreateDate(LocalDate.now());
         return makerDAO.createNewTempRecord(customerTemp);
@@ -33,46 +33,34 @@ public class MakerActions {
         return makerDAO.getPermCustomerList();
     }
 
-    public boolean modifies(String checker, CustomerTemp customerTemp){
-        CustomerPerm customerPerm = makerDAO.getPermRecord(customerTemp.getCustomerCode());
-        if(customerTemp.getRecordStatus().equals(RecordStatus.N) ||
-                customerTemp.getRecordStatus().equals(RecordStatus.M)||
-       customerPerm!=null ){
+    public boolean modifies(String maker, CustomerTemp customerTemp){
 
-            if(customerPerm!=null){
-                customerTemp.setRecordStatus(RecordStatus.M);
-            }
-        }
-
-        if(customerTemp.getRecordStatus().equals(RecordStatus.NR)||
-        customerTemp.getRecordStatus().equals(RecordStatus.MR)){
+        if(customerTemp.getRecordStatus().equals(RecordStatus.A)){
             customerTemp.setRecordStatus(RecordStatus.M);
         }
+        else if(customerTemp.getRecordStatus().equals(RecordStatus.MR)){
+            customerTemp.setRecordStatus(RecordStatus.M);
+        }
+        else if(customerTemp.getRecordStatus().equals(RecordStatus.NR)){
+            customerTemp.setRecordStatus(RecordStatus.N);
+        }
 
-        customerTemp.setModifiedDate(LocalDateTime.now());
-        customerTemp.setModifiedBy(checker);
-        customerTemp.setModifies(new AbstractMap.SimpleEntry<>(customerTemp.getModifiedDate(), customerTemp.getModifiedBy()));
+        customerTemp.setModifiedBy(maker);
+        LocalDateTime now = LocalDateTime.now();
+        customerTemp.setModifiedDate(now);
+        customerTemp.setModifies(new AbstractMap.SimpleEntry<>(now, maker));
         makerDAO.updateTempRecord(customerTemp);
        return true;
     }
 
     public boolean deletes(CustomerTemp customerTemp){
-        if(customerTemp.getRecordStatus().equals(RecordStatus.M)||
-        customerTemp.getRecordStatus().equals(RecordStatus.N)||
-        customerTemp.getRecordStatus().equals(RecordStatus.NR)||
-        customerTemp.getRecordStatus().equals(RecordStatus.MR)){
-
-            makerDAO.deleteTempRecord(customerTemp);
+        if(customerTemp.getRecordStatus().equals(RecordStatus.A)){
+            customerTemp.setRecordStatus(RecordStatus.D);
+            makerDAO.createNewTempRecord(customerTemp);
         }
-        else {
-            CustomerPerm customerPerm = makerDAO.getPermRecord(customerTemp.getCustomerCode());
-            if (customerPerm != null) {
-                customerTemp.setRecordStatus(RecordStatus.D);
-                makerDAO.updateTempRecord(customerTemp);
-            }
+        else{
+            makerDAO.deleteTempRecord(customerTemp);
         }
         return true;
     }
-
-
 }
