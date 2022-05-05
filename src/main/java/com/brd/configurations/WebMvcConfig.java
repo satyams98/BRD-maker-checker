@@ -14,11 +14,10 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @ComponentScan(basePackages = {"com.brd.controller"})
 public class WebMvcConfig implements WebMvcConfigurer {
-//    @Override
-//    public void addViewControllers(ViewControllerRegistry registry) {
-//        registry.addViewController("/").setViewName("index");
-//    }
-
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("index");
+    }
 
     @Bean
     public InternalResourceViewResolver resolver() {

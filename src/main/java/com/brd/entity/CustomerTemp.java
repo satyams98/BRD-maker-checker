@@ -1,22 +1,14 @@
 package com.brd.entity;
-
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.AbstractMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 @Entity
 public class CustomerTemp {
-    static int id = 101;
     @Id
     @Column(name = "customerCode", nullable = false, length = 10)
-    private String customerCode= getCustomerCode();
-
-    @GeneratedValue
-    private Long customerId;
-
+    private String customerCode;
+    private long customerId;
     private String customerName;
     private String add1;
     private String add2;
@@ -30,10 +22,8 @@ public class CustomerTemp {
     private String createdBy;
     private LocalDateTime modifiedDate;
     private String modifiedBy;
-    LinkedHashMap<LocalDateTime, String > modifies = new LinkedHashMap<>();
     private LocalDateTime authorizeDate;
     private String authorizeBy;
-    LinkedHashMap<LocalDateTime, String> authorizes = new LinkedHashMap<>();
 
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
@@ -51,11 +41,11 @@ public class CustomerTemp {
         this.customerCode = customerCode;
     }
 
-    public Long getCustomerId() {
+    public long getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(Long customerId) {
+    public void setCustomerId(long customerId) {
         this.customerId = customerId;
     }
 
@@ -155,14 +145,6 @@ public class CustomerTemp {
         this.modifiedBy = modifiedBy;
     }
 
-    public LinkedHashMap<LocalDateTime, String> getModifies() {
-        return modifies;
-    }
-
-    public void setModifies(Map.Entry<LocalDateTime, String> modifies) {
-        this.modifies.put(modifies.getKey(), modifies.getValue());
-    }
-
     public LocalDateTime getAuthorizeDate() {
         return authorizeDate;
     }
@@ -179,14 +161,4 @@ public class CustomerTemp {
         this.authorizeBy = authorizeBy;
     }
 
-    public LinkedHashMap<LocalDateTime, String> getAuthorizes() {
-        return authorizes;
-    }
-
-    public void setAuthorizes(Map.Entry<LocalDateTime, String> authorizes) {
-        this.authorizes.put(authorizes.getKey(), authorizes.getValue());
-    }
-    private String generateCustomerCode(){
-        return "cust"+String.valueOf(++id);
-    }
 }

@@ -1,8 +1,10 @@
-package com.brd.entity.controller;
+package com.brd.controller;
 
+import com.brd.dao.DAO;
 import com.brd.dao.MakerDAO;
 import com.brd.entity.Maker;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -10,32 +12,32 @@ import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
-@SessionAttributes("role")
+@SessionAttributes({"role", "roleName"})
 public class MakerLogin {
     @Autowired
-    private MakerDAO makerDAO;
-    private Maker maker = makerDAO.getMaker();
+    @Qualifier("makerDAO")
+    private DAO makerDAO;
+  //  private Maker maker = makerDAO.getMaker();
 
 
-    @RequestMapping(value="/maker/login", method = RequestMethod.POST)
+    @RequestMapping(value="/login/maker", method = RequestMethod.GET)
     public String MakerLogin(@RequestParam("uname") String uname,
                              @RequestParam("pass") String pass,
                              Model model, RedirectAttributes redirectAttributes){
-        if (uname.equals(maker.getUserName()) && pass.equals(maker.getPass())){
-            model.addAttribute("role", maker);
-            return "redirect:/maker/home";
+        if (uname.equals("saty") && pass.equals("pass")){
+            model.addAttribute("role","maker");
+            model.addAttribute("roleName", "satyam");
+            return "redirect:/newRecords";
         }
         else{
+            redirectAttributes.addAttribute("css", "warning");
             redirectAttributes.addAttribute("msg", "Username or password Incorrect!");
             return "redirect:/index";
         }
     }
-    @RequestMapping(value="/maker/home", method=RequestMethod.GET)
-    public String showMakerHome(Model model){
-        return "makerHome";
-    }
-    @RequestMapping(value="/maker/logout", method=RequestMethod.POST)
-    public String MakerLogOut(Model model, SessionStatus sessionStatus){
+
+    @RequestMapping(value="/logoutMaker", method=RequestMethod.GET)
+    public String logout(Model model, SessionStatus sessionStatus){
         sessionStatus.setComplete();
         return "index";
     }

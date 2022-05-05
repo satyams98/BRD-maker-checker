@@ -1,6 +1,7 @@
 package com.brd.dao;
 
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 import com.brd.entity.CustomerPerm;
 import com.brd.entity.CustomerTemp;
@@ -18,7 +19,6 @@ import org.springframework.transaction.annotation.Transactional;
 public class DAOImplementation implements DAO {
     @Autowired
     private SessionFactory sessionFactory;
-
     @Transactional
     @Override
     public boolean createNewTempRecord(CustomerTemp customerTemp) {

@@ -12,30 +12,34 @@
  </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Checker</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-         
-        </ul>
-        <form class="d-flex">
-          <button class="btn btn-outline-success" type="submit">Log Out</button>
-        </form>
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Checker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="/newRecords" id ="new">Approve Pending</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/authorizedRecords" id ="auth">Authorized Records</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/rejectedRecords" id = "rejected">Rejected Records</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/deletedRecords" id = "deleted">Delete Pending</a>
+                  </li>
+
+              </ul>
+              <form class="d-flex" action = "/logoutChecker">
+                  <button class="btn btn-outline-success" type="submit">Log Out</button>
+              </form>
+          </div>
       </div>
-    </div>
   </nav>
-
-
-
+  </br>
 
 </body>
 </html>

@@ -1,11 +1,13 @@
 package com.brd.entity;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-@Entity
-public class CustomerPerm {
+@MappedSuperclass
+public abstract class Customer {
     @Id
     @Column(name = "customerCode", nullable = false, length = 10)
     private String customerCode;
@@ -161,6 +163,5 @@ public class CustomerPerm {
     public void setAuthorizeBy(String authorizeBy) {
         this.authorizeBy = authorizeBy;
     }
-
 
 }

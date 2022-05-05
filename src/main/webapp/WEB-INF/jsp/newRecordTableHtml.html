@@ -14,6 +14,28 @@
         $(document).ready( function () {
         $('#Record').DataTable();
     } );
+
     </script>
+    <style>
+.active {
+  background-color: #666;
+  color: white;
+}
+.nav-link:hover{
+background-color: #6666;
+}
+</style>
+
+    <script>
+$(function(){
+    var current = location.pathname;
+    $('.nav-link').each(function(){
+        var $this = $(this);
+        if($this.attr('href').indexOf(current) !== -1){
+            $this.addClass('active');
+        }
+    })
+})
+</script>
 </body>
 </html>

@@ -2,11 +2,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"  %>  
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>  
 <%@ page isELIgnored="false" %>
-<%@ include file = "checkerHeader.html"%> 
+<%@ include file = "checkerHeader.jsp"%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Checker</title>
     
 </head>
 <body>
